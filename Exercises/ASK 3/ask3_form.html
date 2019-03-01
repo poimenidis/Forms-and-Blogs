@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	
+
+	<body>
+	
+	<head>
+		<meta charset="utf-8"/>
+		<title>Φόρμα Επικοινωνίας </title>
+				<style type="text/css">
+			header{
+				background-color: #4d79ff;
+				color: White;
+				text-align: center;	
+			}
+			
+			section{
+
+				background-image: url("gradient-bg.png");
+				background-repeat: repeat-x; /* σε επανάληψη οριζόντια */
+				padding: 15px;
+				border: 5px solid black;
+			}
+			
+			#firstName{
+				width: 290px;
+			}
+			
+			
+			body{
+				
+			}
+
+		</style>
+		
+
+	</head>
+	
+	<header>
+	<br/>
+		<h1>Φόρμα Επικοινωνίας </h1>
+			<br/>
+	</header>
+	
+<br/>
+	
+	<section> 
+	
+	<form id = "clientForm"  name = "clientForm" method = "get" action = "stoixeia.html" >
+	
+		<h3>Συμπληρώστε παρακαλώ τα παρακάτω στοιχεία </h3>
+	
+		
+		<label for="firstName">Ονοματεπώνυμο:</label> <br/>
+		<input type="text" name="firstNames" id="firstNames" required> <br /> <br/>
+		
+		
+		Ηλικία (διαλέξτε ένα από τα παρακάτω):<br/>
+				<input type="radio" name="ilikia" value="OS17" />Έως 17 <br/>
+				<input type="radio" name="ilikia" value="18-30" />Από 18 έως 30<br/>
+				<input type="radio" name="ilikia" value="31-40" />Από 31 έως 40 <br/>
+				<input type="radio" name="ilikia" value="17" />Από 41 έως 55 <br/>
+				<input type="radio" name="ilikia" value="18-30" />Από 56 έως 65 <br/>
+				<input type="radio" name="ilikia" value="31-40" />Πάνω από 66<br/>
+		
+		<br/>
+		
+		Τι πληροφορίες θέλετε (διαλέξτε όσα θέλετε): <br />
+				<input type="checkbox" name="plirofories" value="Hotels" />Ξενοδοχεία <br/>
+				<input type="checkbox" name="plirofories" value="Museums" />Μουσεία <br/>
+				<input type="checkbox" name="plirofories" value="Sights"/>Αξιοθέατα <br/>
+				<input type="checkbox" name="plirofories" value="Restaurants-Food" />Εστιατόρια-Φαγητό <br/>
+				
+		<br/>
+		
+			Περιοχή που σας ενδιαφέρει:
+					<br/>
+			<select name="city" multiple size="4">
+			
+				
+					<option value="Makedonia">Μακεδονία</option>
+					<option value="Kiklades">Κυκλάδες</option>
+					<option value="Thraki">Θράκη</option>
+					<option value="Alli">Άλλη</option>
+				
+			
+			</select>
+			
+			<br/>
+			<br/>
+			
+
+		
+		<label for="firstName">e-mail επικοινωνίας:</label> <br/>
+		<input type="email" name="email" id="email" required> <br /> 
+
+		
+		<p id="buttons">
+			<input type="submit" value="Υποβολή - Δείξε στοιχεία">
+			<input type="reset" value="Καθάρισμα">
+		</p>
+		
+	</form>
+	
+	</section>
+	
+	</body>
+	
+</html>

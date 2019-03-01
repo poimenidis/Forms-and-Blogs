@@ -1,0 +1,68 @@
+header{
+	
+	background-color: Black;
+	color: White;
+	text-align: center;
+	
+}
+
+
+body{
+	background-image: url("w3s.png");
+    background-repeat: repeat-x; /* σε επανάληψη οριζόντια */
+}
+
+section{
+	background-image: url("gradient_bg.png");
+    background-repeat: repeat-x;
+	width: 60%;
+	display: inline-block;
+}
+
+nav{
+width: calc( 25% - 100px);
+height:500px;
+box-sizing: border-box;
+float: left; 
+background-color: gray;
+padding: 15px;
+margin: 10px;
+border: 15px solid #5EAF00;
+text-align: left;
+}
+aside 
+{
+width: calc( 25% - 100px);
+height:500px;
+box-sizing: border-box; /*padding перестают увеличивать размер блока*/
+float: right; 
+background-color: silver;   
+padding: 15px;
+text-align: center;
+margin: 10px;
+}
+
+footer{
+
+   	width:100%;
+   	height:30px;
+	background-color: Black;
+	color: White;
+	text-align: center;
+}
+
+img{
+	float:right;
+	width:400px;
+	background-color: #FFD732;
+    padding: 10px;
+    border: 15px solid navy;
+}
+			
+span{
+	 float: left;
+	 width: 0.7em;
+	 font-size: 400%;
+	 font-family: algerian, courier;
+	 line-height: 80%;
+}

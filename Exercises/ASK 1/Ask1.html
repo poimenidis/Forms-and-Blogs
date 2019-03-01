@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Φόρμα</title>
+	<link rel="stylesheet" href="Ask1.css"/>
+	</head>
+
+	<body>
+	
+		<h1 style="text-align:center;">Φόρμα παραγγελίας </h1>
+		<br/>
+		<br />
+		
+		<form id="order_form">
+				<fieldset class="receiverInfo">
+					<legend>Στοιχεία παραλήπτη </legend>
+					<label for="firstName">Όνομα*</label> <input type="text" name="firstName" id="firstName" required> <br /> <br/>
+					<label for="last_name">Επώνυμο*</label> <input type="text" name="last_name" id="last_name" required> <br /> <br/>
+					<label for="telep"> Τηλέφωνο* </label> <input type="tel" name="telephone" id="telep" required> <br /> <br/>
+					<label for="addr"> Διεύθυνση* </label> <input type="text" name="address" id="addr" required> <br /> <br/>
+					<label for="tk"> ΤΚ* </label>  <input type="text" name="tk" id="tk" required><br /> <br/>
+					<label for="e-mail"> Email </label> <input type="email" name="e-mail" id="e-mail"> <br/> <br/>
+					<!--<label for="url"> Ο ιστότοπός σας</label>  <input type="url" name="url_link" id="url"> -->
+					<label> Ο ιστότοπός σας <input type="url" name="url_link" id="url"> </label>  
+				</fieldset>
+				<br />
+				
+
+				
+				<fieldset class="pay">
+					<legend>Πληρωμή </legend>
+					<label>Πόλη: 
+						<select name="cities" required>
+							<option value="" selected></option>
+							<option value="thessaloniki">Θεσσαλονίκη</option>
+							<option value="veroia">Βέροια</option>
+							<option value="edessa">Έδεσσα</option>
+							<option value="kilkis">Κιλκίς</option>
+							<option value="kozani">Κοζάνη</option>
+							<option value="florina">Φλώρινα</option>
+							<option value="grevema">Γρεβενά</option>
+						</select>
+					</label> <br /> <br />
+					
+					<b>Τρόπος πληρωμής </b> <br/>
+						<label> <input type="radio" name="pliromi" value="antikatavoli" /> Αντικαταβολή </label> <br/>
+						<label> <input type="radio" name="pliromi" value="katathesi" /> Κατάθεση</label> <br/>
+						<label> <input type="radio" name="pliromi" value="pistotiki" /> Πιστωτική κάρτα </label> <br/>
+				</fieldset>
+				
+				<p id="odigies">
+					<label for="textarea"> Οδηγίες για την παράδοση </label> <textarea name="box_with_sizecss_and_placeholder" placeholder="Εδώ γράφετε!" id="textarea"></textarea>
+				</p>
+		
+				<p id="eykolia">
+					<label  for="orderEasy">Πόσο εύκολη ήταν η ολοκλήρωση της παραγγελίας;</label><br />
+						Εύκολη	<input type="range" id="orderEasy" name="orderEasy" min="1" max="5" step="1" /> Δύσκολη
+				</p>
+				
+				<p id="buttons">
+					<input type="submit" value="Υποβολή">
+					<input type="reset" value="Επαναφορά">
+				</p>
+		</form>
+	</body>
+	
+</html>

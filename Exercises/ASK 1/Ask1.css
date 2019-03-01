@@ -1,0 +1,62 @@
+header{
+	background-color: Black;
+	color: White;
+	text-align: center;
+	
+	
+}
+
+nav{
+	width: 25%;
+	float:left;
+}
+
+section{
+	float: left;
+	width: 80%;
+}
+
+legend{
+	font-weight: bold;
+}
+.receiverInfo label{
+	
+	float: left;
+	width: 85px;
+}
+
+.receiverInfo {
+	background-color: #4d79ff;
+      	width: 320px;
+}
+
+.pay{
+	background-color: #4d79ff;
+      	width: 320px;
+}
+
+#eykolia{
+	margin-left: 900px;
+	background-color: orange;
+      	width: 400px;
+	height: 50px;
+}
+
+#textarea{
+	width: 170px;
+	height: 50px;
+}
+
+#odigies{
+	margin-left: 900px;
+	margin-top: -525px;
+}
+
+label[for="orderEasy"]{
+	font-weight: bold;
+}
+
+#buttons{
+	margin-left: 700px;
+	margin-top: 425px;
+}
